@@ -13,8 +13,8 @@ import 'ant-design-vue/dist/reset.css';
 
 // js库
 //@ts-ignore
-import rotate from "./plugins/rotateCard";
 import scrollHeaderPlugin from "./plugins/scrollHeaderPlugin";
+
 // global style
 import "@/App.css";
 import "@/assets/css/reset.css";
@@ -27,7 +27,6 @@ const app = createApp(App);
 
 app.use(router)
   .use(ElementPlus)
-  .use(rotate)
   .use(scrollHeaderPlugin)
   .use(Antd)
   .use(pinia)

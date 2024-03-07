@@ -4,11 +4,11 @@
       <div>MESSAGE WALL</div>
       <el-form class="form" ref="formRef" :model="form" :rules="rules">
         <el-form-item class="item" label="账户:" prop="phone">
-          <el-input v-model="form.phone" type="text" />
+          <el-input v-model="form.phone" type="text" placeholder="请输入手机号" />
         </el-form-item>
 
         <el-form-item class="item" label="密码:" prop="password">
-          <el-input v-model="form.password" show-password type="password" />
+          <el-input v-model="form.password" show-password type="password" placeholder="请输入密码" />
         </el-form-item>
 
         <el-form-item class="item">
@@ -37,8 +37,8 @@ const formRef = ref<FormInstance>();
 
 // 登录的表单
 const form = ref({
-  phone: "18611111111",
-  password: "Zcc1111@",
+  phone: "",
+  password: "",
 });
 
 const pattern = {

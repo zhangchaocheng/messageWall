@@ -5,8 +5,8 @@ const config = {
   db: {
     host: "localhost",
     user: "root",
-    pwd: "123456",
-    dataBase: "wall",
+    pwd: "xxxxxxxxx", // 数据库密码
+    dataBase: "wall", 
   },
 };
 

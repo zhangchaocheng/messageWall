@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const webConfig = {
-  url: "http://79d678c6.r21.cpolar.top" //后端请求地址
+  url: "http://localhost:3000" //后端请求地址
 }
 
 const service = axios.create({
