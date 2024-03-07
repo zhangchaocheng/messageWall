@@ -1,0 +1,87 @@
+div {
+  .box_ {
+    --br: 1.8vw;
+    border-radius: var(--br);
+    box-sizing: border-box;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 8%;
+    padding: 0.5rem;
+    height: 70vh;
+    background-color: #ffffffc1;
+    transition: all 0.3s;
+    position: relative;
+    .item {
+      --bg: #f1f1f162;
+      --grey: #d9d9d98c;
+      margin-bottom: 2rem;
+      cursor: default;
+      border-radius: var(--br);
+      overflow: hidden;
+      background: repeating-linear-gradient(45deg, var(--bg), var(--grey) 15px);
+      transition: 0.15s all ease-in-out;
+      box-shadow: rgba(172, 172, 172, 0.15) 1.95px 1.95px 2.6px;
+      .content {
+        padding: 0.5rem;
+        .title {
+          width: 99%;
+          box-sizing: border-box;
+          padding: 0.2vw 0.5vw;
+          margin-bottom: 1vw;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .text {
+          padding: 0.5rem;
+          height: 11.5vw;
+          border-radius: var(--br);
+          margin-bottom: 0.8rem;
+          font-size: 1.2vw;
+          color: #000000bb;
+          text-indent: 1.3rem;
+          line-height: 2em;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 5;
+          background-image: linear-gradient(#ffffff57 2.2rem, #c3c3c3b1 2.3rem);
+          background-size: 60% 2.3rem;
+        }
+        .info {
+          display: flex;
+          position: relative;
+          color: #ffffff9c;
+          font-weight: 600;
+          .user {
+            width: 30%;
+            text-align: center;
+            img {
+              width: 3vw;
+              height: 3vw;
+              border-radius: 100%;
+              cursor: pointer;
+            }
+            span {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              font-size: 1vw;
+              height: 1.3vw;
+              cursor: pointer;
+            }
+          }
+          .time {
+            flex: 1;
+            font-size: 0.5vw;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

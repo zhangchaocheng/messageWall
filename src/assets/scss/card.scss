@@ -1,0 +1,67 @@
+.drawer {
+  --br: 1.8vw;
+  --bg: #f1f1f162;
+  --grey: #d9d9d98c;
+  .card {
+    margin: 0 auto;
+    border-radius: 2vw;
+    width: 17vw;
+    overflow: hidden;
+    background: repeating-linear-gradient(45deg, var(--bg), var(--grey) 15px);
+    transition: 0.15s all ease-in-out;
+    animation: float 2s infinite;
+
+    .text {
+      width: 100%;
+      height: 13vw;
+      padding: 1vw;
+      overflow: hidden;
+      font-size: 1.25vw;
+      white-space: wrap;
+      word-break: break-all;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 6;
+      background-image: linear-gradient(#ffffff57 2.3vw, #c3c3c3b1 2.3vw);
+      background-size: 20% 2.4vw;
+    }
+    .content {
+      align-items: center;
+      .el-img {
+        display: block;
+        width: 3vw;
+        height: 3vw;
+        object-fit: cover;
+        border-radius: 10vw;
+      }
+      .like {
+        margin-top: 0.5vw;
+        width: 2vw;
+        height: 2vw;
+      }
+    }
+  }
+
+  .subimt {
+    .el-form-item__content {
+      justify-content: flex-end;
+    }
+  }
+
+  // 定义动画
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+      box-shadow: rgba(172, 172, 172, 0.15) 1.95px 1.95px 2.6px;
+    }
+    50% {
+      transform: translateY(-0.2rem);
+      box-shadow: rgba(0, 0, 0, 0.234) 0px 5px 15px;
+    }
+    100% {
+      transform: translateY(0);
+      box-shadow: rgba(172, 172, 172, 0.15) 1.95px 1.95px 2.6px;
+    }
+  }
+}
