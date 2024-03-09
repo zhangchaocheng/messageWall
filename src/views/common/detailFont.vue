@@ -238,8 +238,7 @@ const closeOutBox = async (event: any) => {
     return new Promise<void>((resolve) => {
       const { w, x, y, h } = JSON.parse(localStorage.getItem("fontDetail") as string)
       const boxElement = box.value;
-      const outBoxElement = outBox.value;
-      outBoxElement.style.backgroundColor = "rgba(255, 255, 255, 0)";
+      outBox.value.style.backgroundColor = "rgba(255, 255, 255, 0)";
       document.body.style.overflow = "scroll";
       boxElement.style.opacity = "0";
       boxElement.style.width = `${w}px`;
@@ -262,9 +261,8 @@ const closeOutBox = async (event: any) => {
 // 更新box样式
 function updateBoxStyle() {
   const boxElement = box.value;
-  const outBoxElement = outBox.value;
   if (boxElement) {
-    outBoxElement.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    outBox.value.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     document.body.style.overflow = "hidden";
     boxElement.style.opacity = "1";
     boxElement.style.width = "70%";
